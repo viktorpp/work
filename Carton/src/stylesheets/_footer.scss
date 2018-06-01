@@ -1,0 +1,12 @@
+.footer {
+	background-color: $main-bg;
+
+	&__text {
+		padding: 34px 0 37px;
+		color: rgba($text-color-light, 0.5);
+		font-size: 13px;
+		font-weight: 300;
+		line-height: 17px;
+		text-align: center;
+	}
+}

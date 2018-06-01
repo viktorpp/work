@@ -1,0 +1,702 @@
+.wrapper-page {
+	padding: 65px 0 100px;
+	background: $section-bg url(../images/services/services-bg.jpg);
+	@include lg(padding, 30px 0 30px);
+	@include md(background, $section-bg);
+}
+
+.content-wrap {
+	@include row-flex();
+}
+
+.sidebar {
+	@include col();
+	@include size(4)
+	@include size-lg(10)
+	@include md(margin, 0 auto);
+	@include size-sm(12)
+	&-title {
+		text-align: left;
+		font-size: 20px;
+		letter-spacing: 0.4px;
+		@include sm(text-align, center);
+	}
+	&-menu {
+		margin-top: 15px;
+		&__item{
+			margin: 2px 0;
+			padding: 21px;
+			background-color: #fff;
+			position: relative;
+			@include xxll-block() {
+				padding: 0;
+				padding-left: 18px;
+			}
+			@include lg(padding-left, 50px);
+			@include md(padding-left, 20%);
+			@include table(padding-left, 20px);
+			&:before {
+				content: '';
+				position: absolute;
+				top: 23%;
+			}
+			/*&:hover {
+				background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+				@include lg-block() {
+					background: #fff;
+				}
+				}*/
+
+
+				&:hover a {
+					color: $text-color-light;
+					transition: 0.7s;
+					@include lg-block() {
+						color: $text-color-dark;
+						transition: none;
+					}
+				}
+			}
+			&__item1{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-1_hover.png) no-repeat;
+						background-size: 100%;
+						width: 27px;
+						height: 27px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-1.png) no-repeat;
+					background-size: 100%;
+					width: 27px;
+					height: 27px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-1_hover.png) no-repeat;
+					background-size: 100%;
+					width: 27px;
+					height: 27px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-1.png) no-repeat;
+						background-size: 100%;
+						width: 27px;
+						height: 27px;
+						transition: none;
+					}
+
+				}
+			}
+
+			&__item2{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-2_hover.png) no-repeat;
+						background-size: 100%;
+						width: 28px;
+						height: 29px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-2.png) no-repeat;
+					background-size: 100%;
+					width: 28px;
+					height: 29px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-2_hover.png) no-repeat;
+					background-size: 100%;
+					width: 28px;
+					height: 29px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-2.png) no-repeat;
+						background-size: 100%;
+						width: 28px;
+						height: 29px;
+						transition: none;
+					}
+
+				}
+			}
+
+			&__item3{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-3_hover.png) no-repeat;
+						background-size: 100%;
+						width: 32px;
+						height: 27px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-3.png) no-repeat;
+					background-size: 100%;
+					width: 32px;
+					height: 27px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-3_hover.png) no-repeat;
+					background-size: 100%;
+					width: 32px;
+					height: 27px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-3.png) no-repeat;
+						background-size: 100%;
+						width: 32px;
+						height: 27px;
+						transition: none;
+					}
+
+				}
+			}
+			&__item4{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-4_hover.png) no-repeat;
+						background-size: 100%;
+						width: 26px;
+						height: 30px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-4.png) no-repeat;
+					background-size: 100%;
+					width: 26px;
+					height: 30px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-4_hover.png) no-repeat;
+					background-size: 100%;
+					width: 26px;
+					height: 30px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-4.png) no-repeat;
+						background-size: 100%;
+						width: 26px;
+						height: 30px;
+						transition: none;
+					}
+
+				}
+			}
+
+			&__item5{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-5_hover.png) no-repeat;
+						background-size: 100%;
+						margin-top: 7px;
+						width: 33px;
+						height: 20px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-5.png) no-repeat;
+					background-size: 100%;
+					margin-top: 7px;
+					width: 33px;
+					height: 20px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-5_hover.png) no-repeat;
+					background-size: 100%;
+					width: 33px;
+					height: 20px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-5.png) no-repeat;
+						background-size: 100%;
+						width: 33px;
+						height: 20px;
+						transition: none;
+					}
+
+				}
+			}
+
+			&__item6{
+				&:hover {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					@include lg-block() {
+						background: #fff;
+					}
+				}
+				&_active {
+					background: linear-gradient(-221deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+					&:before {
+						content: '';
+						background: url(../images/services/icon-6_hover.png) no-repeat;
+						background-size: 100%;
+						width: 21px;
+						height: 28px;
+					}
+					a {
+						color: $text-color-light;
+					}
+					&:hover a {
+						@include lg-block() {
+							color: $text-color-light;
+						}
+					}
+				}
+				&:before {
+					content: '';
+					background: url(../images/services/icon-6.png) no-repeat;
+					background-size: 100%;
+					width: 21px;
+					height: 28px;
+					@include ftr(margin-top, 5px);
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-6_hover.png) no-repeat;
+					background-size: 100%;
+					width: 21px;
+					height: 28px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-6.png) no-repeat;
+						background-size: 100%;
+						width: 21px;
+						height: 28px;
+						transition: none;
+					}
+
+				}
+			}
+			/*&__item2{
+				&:before {
+					content: '';
+					background: url(../images/services/icon-2.png) no-repeat;
+					background-size: 100%;
+					width: 28px;
+					height: 29px;
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-2_hover.png) no-repeat;
+					background-size: 100%;
+					width: 28px;
+					height: 29px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-2.png) no-repeat;
+						background-size: 100%;
+						width: 27px;
+						width: 28px;
+						height: 29px;
+					}
+				}
+			}
+			&__item3{
+				&:before {
+					content: '';
+					background: url(../images/services/icon-3.png) no-repeat;
+					background-size: 100%;
+					width: 32px;
+					height: 27px;
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-3_hover.png) no-repeat;
+					background-size: 100%;
+					width: 32px;
+					height: 27px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-3.png) no-repeat;
+						background-size: 100%;
+						width: 32px;
+						height: 27px;
+						transition: none;
+					}
+				}
+			}
+			&__item4{
+				&:before {
+					content: '';
+					background: url(../images/services/icon-4.png) no-repeat;
+					background-size: 100%;
+					width: 26px;
+					height: 30px;
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-4_hover.png) no-repeat;
+					background-size: 100%;
+					width: 26px;
+					height: 30px;
+					transition: 0.7s;
+					@include lg-block() {
+						background: url(../images/services/icon-4.png) no-repeat;
+						background-size: 100%;
+						width: 26px;
+						height: 30px;
+						transition: none;
+					}
+				}
+			}
+			&__item5{
+				&:before {
+					content: '';
+					background: url(../images/services/icon-5.png) no-repeat;
+					background-size: 100%;
+					width: 33px;
+					height: 20px;
+					margin-top: 5px;
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-5_hover.png) no-repeat;
+					background-size: 100%;
+					width: 33px;
+					height: 20px;
+					transition: 1.0s;
+					@include lg-block() {
+						background: url(../images/services/icon-5.png) no-repeat;
+						background-size: 100%;
+						width: 33px;
+						height: 20px;
+						transition: none;
+					}
+				}
+			}
+			&__item6{
+				&:before {
+					content: '';
+					background: url(../images/services/icon-6.png) no-repeat;
+					background-size: 100%;
+					width: 21px;
+					height: 28px;
+				}
+				&:hover:before {
+					content: '';
+					background: url(../images/services/icon-6_hover.png) no-repeat;
+					background-size: 100%;
+					width: 21px;
+					height: 28px;
+					transition: 1.0s;
+					@include lg-block() {
+						background: url(../images/services/icon-6.png) no-repeat;
+						background-size: 100%;
+						width: 21px;
+						height: 28px;
+						transition: none;
+					}
+				}
+				}*/
+				&__link {
+					padding: 18px;
+					margin-left: 30px;
+					color: $text-color-dark;
+					font-size: 16px;
+					font-weight: 400;
+					letter-spacing: 0.32px;
+					@include xxll-block() {
+						display: block;
+					}
+					@include ftr-block() {
+						padding-right: 10px;
+					}
+				}
+			}
+		}
+
+		.content {
+			@include col();
+			@include size(8);
+			@include size-lg(12);
+			color: $text-color-dark;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.32px;
+			&-title {
+				text-align: left;
+				@include sm(text-align, center);
+			}
+			&-shipping {
+				@include lg(margin-top, 30px);
+				&__text {
+					margin-top: 13px;
+					@include sm(text-align, justify);
+				}
+			}
+			&-galary {
+				margin-top: 48px;
+				@include lg(margin-top, 30px);
+				&__img {
+					margin-top: 17px;
+					display: flex;
+					flex-wrap: wrap;
+					margin-left: -7.5px;
+					margin-right: -7.5px;
+
+					img {
+						margin-left: 7.5px;
+						margin-right: 7.5px;
+						width: calc(50% - 15px);
+						@include sm-block() {
+							width: 97%;
+							margin-top: 5px;
+						}
+					}
+				}
+			}
+			&-reviews {
+				margin-top: 50px;
+				@include lg(margin-top, 40px);
+				&__wrap {
+					margin-top: 10px;
+				}
+				&__review {
+					margin-top: 4px;
+					padding: 31px 30px 31px 26px;
+					background-color: rgba($bg-color-light, 0.62);
+					@include sm-block() {
+						padding: 15px;
+						text-align: justify;
+					}
+					&-name {
+						display: block;
+						font-weight: 700;
+					}
+				}
+			}
+			&-feedback {
+				margin-top: 38px;
+				font-size: 15px;
+				letter-spacing: 0.3px;
+				@include sm(margin-top, 30px);
+				&__form {
+					margin-top: 8px;
+				}
+				&__input {
+					@include size(4);
+					@include size-md(6);
+					@include md(padding, 11px 0 19px 19px);
+					@include size-sm(12);
+					padding: 11px 68px 19px 19px;
+					margin-top: 11px;
+					margin-right: 5px;
+
+				}
+				&__textarea {
+					display: block;
+					@include size(12);
+					height: 83px;
+					margin-top: 11px;
+					padding: 13px 0 19px 21px;
+				}
+				&__button {
+					margin-top: 15px;
+					color: $text-color-dark;
+					border: 2px solid $text-color-dark;
+					&:hover {
+						color: $text-color-light;
+						@include lg-block() {
+							border: 2px solid $text-color-dark;
+							color: $text-color-dark;
+						}
+					}
+					@include sm-block() {
+						display: block;
+						margin: 0 auto;
+						margin-top: 15px;
+					}
+				}
+			}
+			&-table {
+				margin-top: 44px;
+				@include sm(margin-top, 30px);
+			}
+		}
+
+		.table {
+			margin-top: 18px;
+			width: 100%;
+			font-size: 15px;
+			font-weight: 700;
+			@include w_625-block() {
+				display: block; 
+				overflow-x: auto;
+			}
+			//@include md(font-size, 13px);
+			&-head {
+				//@include sm(display, none);
+				&_line {
+					background-color: $bg-header-table;
+					color: $text-color-light;
+				}
+				&_cell {
+					border: 1px solid #0f547c;
+				}
+			}
+			&-body{
+				&_line{
+					background-color: $bg-color-light;
+			/*@include sm-block() {
+				margin-bottom: 10px;
+				display: block;
+				border-bottom: 5px solid #a0a0a0;
+				}*/
+			}
+			&_cell {
+				border: 1px solid #eeeeee;
+			/*@include sm-block() {
+				display: block;
+				font-size: 13px;
+				padding: 0;
+				}*/
+			}
+		}
+	}
+	.table-body_cell:before {
+	/*@include sm-block(){
+		content: attr(data-label);
+		text-transform: uppercase;
+		display: block;
+		background-color: $bg-header-table;
+		color: $text-color-light;
+		text-align: center;
+		}*/
+	}
+
+	.table-head_cell,
+	.table-body_cell {
+		padding: 14px 5px;
+		text-align: center;
+	}
+
+	.content-list {
+		margin-top: 45px;
+		@include sm(margin-top, 30px);
+		&__items {
+			margin-top: 20px;
+		}
+		&__item {
+			font-size: 15px;
+			font-weight: 700;
+			letter-spacing: 0.3px;
+			position: relative;
+			&:before {
+				content: '';
+				position: absolute;
+				top: 5px;
+				display: block;
+				width: 13px;
+				height: 13px;
+				border-radius: 50%;
+				background-image: linear-gradient(-18deg, #0b5e8f 0%, #2e76a0 50%, #0b5e8f 100%);
+			}
+
+		}
+		&__link {
+			color: $text-color-dark;
+			margin-left: 22px;
+			&:hover {
+				color: #136493;
+				text-decoration: underline;
+			}
+		}
+	}

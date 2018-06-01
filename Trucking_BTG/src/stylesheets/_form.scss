@@ -1,0 +1,59 @@
+.request {
+	padding: 52px 0 53px;
+	background: $section-bg url(../images/form/sky-bg.jpg) left no-repeat;
+	background-size: cover;
+	&-form {
+		@include row-flex();
+		@include size(8);
+		margin: 0 auto;
+		@include size-lg(12);
+		@include w_1650-block() {
+			background: rgba(255,255,255,0.7);
+		}
+		&_input {
+			@include col()
+			@include size(6);
+			margin-top: 39px;
+			padding-bottom: 12px;
+			border: none;
+			border-bottom: 1px solid #000000;
+			color: $text-color-form;
+			font-size: 15px;
+			font-weight: 700;
+			outline: none;
+			background: transparent;
+			letter-spacing: 0.3px;
+			@include size-sm(12);
+		}
+	}
+	&-button {
+		display: block;
+		margin: 0 auto;
+		margin-top: 41px;
+		color: $text-color-dark;
+		border: 2px solid $text-color-dark;
+		&:hover {
+			color: $text-color-light;
+			@include lg-block() {
+				border: 2px solid $text-color-dark;
+				color: $text-color-dark;
+			}
+		}
+	}
+	&-text {
+		margin: 0 auto;
+		margin-top: 25px;
+		text-align: center;
+		color: $text-color-form;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.3px;
+		@include size-lg(12);
+	}
+}
+
+.mark {
+	background-image: url(../images/form/mark.png);
+	background-repeat: no-repeat;
+	padding-left: 28px;
+}

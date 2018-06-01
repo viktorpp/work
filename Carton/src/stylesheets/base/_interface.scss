@@ -1,0 +1,232 @@
+.menu {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	margin-bottom: 14px;
+	background-color: $main-bg;
+	z-index: 1000;
+	
+
+	&__items {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		min-height: 44px;
+	}
+
+	&__item {
+		list-style-type: none;
+		border-left: 1px dotted rgba(#ffffff, 0.2);
+		min-height: 22px;
+
+		&:first-child {
+			border: none;
+		}
+	}
+
+	&__link {
+		padding: 15px 22px;
+		color: $text-color-light;
+		font-size: 12px;
+		font-weight: 400;
+		text-align: center;
+		text-decoration: none;
+		text-transform: uppercase;
+		
+
+		&:hover {
+			//display: block;
+			width: 100%;
+			background-color: rgba(#ffffff, 0.4);
+			border-radius: 5px;
+		}
+	}
+}
+
+.menu-burger{
+	display: none;
+	width: 35px;
+	height: 35px;
+	border-radius: 5px;
+	background-color: #fff;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.4);
+	position: fixed;
+	top: 10px;
+	left: 10px;
+	z-index: 1000;
+
+	span, span:before, span:after {
+		display: block;
+		height: 2px;
+		width: 18px;
+		position: absolute;
+		left: 50%;
+		margin-left: -9px;
+		top: 50%;
+		margin-top: -1px;
+		background-color: #333;
+	}
+
+	span:before {
+		content: '';
+		transition: all 0.2s;
+		margin-top: -6px;
+	}
+
+	span:after {
+		content: '';
+		transition: all 0.2s;
+		margin-top: 4px;
+	}
+
+	&_active span {
+		background-color: transparent;
+
+		&:before {
+			transform: rotate(135deg);
+			margin-top: 0;
+		}
+
+		&:after {
+			transform: rotate(-135deg);
+			margin-top: 0;
+		}
+	}
+	
+}
+
+.section {
+	&-title {
+		font-size: 27px;
+		font-weight: 700;
+		text-transform: uppercase;
+		text-align: center;
+		margin-bottom: 29px;
+
+		&::after {
+			content: "";
+			margin-top: 12px;
+			display: block;
+			height: 6px;
+			background: url(../images/line.png) center no-repeat;
+		}
+	}
+}
+
+.button {
+	font-size: 14px;
+	background-color: $active-color;
+	border: 1px solid transparent;
+	color: $text-color-light;
+	padding: 13px 22px;
+	border-radius: 5px;
+
+	&:hover {
+		background-color: lighten($active-color, 5);
+		cursor: pointer;
+	}
+
+	&-o {
+		background-color: transparent;
+		color: $text-color-dark;
+		border: 1px solid rgba(#373737, 0.5);
+
+		&:hover {
+			background-color: lighten($active-color, 5);
+			color: $text-color-light;
+			border: 1px solid transparent;
+			cursor: pointer;
+		}
+
+	}
+
+	img {
+		vertical-align: middle;
+		margin-right: 7px;
+	}
+
+	&_big {
+		padding-top: 21px;
+		padding-bottom: 21px;
+		vertical-align: middle;
+		
+	}
+}
+
+.slider-arrow {
+	position: absolute;
+	top: 0;
+	z-index: 99;
+	height: 100%;
+	width: 22px;
+	
+
+	&:hover {
+		cursor: pointer;
+	}
+
+	&_prod {
+		border: 1px solid $active-color;
+
+		&-right {
+			right: 0;
+			background: #ffffff url(../images/arrow-right.png) center no-repeat;
+
+				&:hover {
+					background: $active-color url(../images/arrow-right_active.png) center no-repeat;
+				}
+			}
+
+		&-left {
+			left: 0;
+			background: #ffffff url(../images/arrow-left.png) center no-repeat;
+
+			&:hover {
+				background: $active-color url(../images/arrow-left_active.png) center no-repeat;
+			}
+		}
+	}
+
+	&_feedback {
+		&-right {
+			right: 0;
+			background: url(../images/feedback-arrow-right.png) center no-repeat;
+			}
+
+		&-left {
+			left: 0;
+			background: url(../images/feedback-arrow-left.png) center no-repeat;
+		}
+	}
+
+	&_main {
+		&-right {
+			right: 25px;
+			background: url(../images/feedback-arrow-right.png) center no-repeat;
+			}
+
+		&-left {
+			left: 25px;
+			background: url(../images/feedback-arrow-left.png) center no-repeat;
+		}
+	}
+}
+
+.dark-bg {
+	position: relative;
+	z-index: 2;
+	/* Затемнени фонового изображения на главном экране*/
+
+	&::before {
+		content: '';
+		display: block;
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		z-index: -1;
+		/*Оформление глаыной картинки*/
+	}
+}

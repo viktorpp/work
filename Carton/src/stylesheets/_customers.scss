@@ -1,0 +1,27 @@
+.customers {
+	margin-bottom: 28px;
+
+	&-logo {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+		
+		&-img {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			width: calc(25% - 30px);
+			padding: 15px 0;
+			border-radius: 5px;
+			margin-bottom: 33px;
+			border: 1px solid rgba(0, 0, 0, 0.1);
+			cursor: pointer;
+			filter: grayscale(100%);
+
+			&:hover {
+				filter: none;
+			}
+		}
+	}
+}
+

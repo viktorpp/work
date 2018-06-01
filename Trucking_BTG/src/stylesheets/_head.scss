@@ -1,0 +1,75 @@
+.header {
+	padding: 47px 0 260px;
+	color: $text-color-light;
+	background: url(../images/header/header-bg.jpg) center no-repeat;
+	background-size: cover;
+	@include xxll-block() {
+		padding: 35px 0 70px;
+	}
+	@include sm-block() {
+		padding: 15px 0 50px;
+	}
+
+	&-title {
+		//@include size(8);
+		margin-top: 168px;
+		font-size: 61px;
+		font-weight: 700;
+		line-height: 67px;
+		letter-spacing: 1.22px;
+		@include xxll-block() {
+			margin-top: 40px;
+			text-align: center;;
+		}
+		@include md-block() {
+			font-size: 30px;
+			line-height: 36px;
+		}
+		@include sm-block() {
+			margin-top: 15px;
+		}
+	}
+
+	&-text {
+		
+		margin: 22px 0 32px;
+		font-size: 16px;
+		font-weight: 400;
+		line-height: 30px;
+		letter-spacing: 0.32px;
+		@include xxll-block() {
+			margin: 0 auto;
+			text-align: center;
+		}
+		@include sm-block() {
+			line-height: 18px;
+		}
+
+		&-slider {
+		@include size(6);
+		@include size-lg(7);
+		@include size-md(10);
+		@include size-sm(12);
+		@include xxll-block() {
+			margin: 0 auto;
+		}
+		}
+
+	}
+	&-bottom__button {
+		@include xxll-block() {
+			display: block;
+			margin: 0 auto;
+			margin-top: 20px;
+		}
+		@include w_332(margin-top, 0);
+		@include xs(margin-top, 20px);
+	}
+}
+.slick-dotted.slick-slider {
+	@include sm-block() {
+			margin-bottom: 10px;
+		}
+	//margin-bottom: 10px;
+}
+

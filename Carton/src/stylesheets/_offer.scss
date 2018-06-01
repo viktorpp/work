@@ -1,0 +1,41 @@
+.offer {
+	padding: 64px 0 69px;
+	color: $text-color-light;
+	background: grey url(../images/offer/offer-bg.jpg) center no-repeat;
+	background-size: cover;
+	text-align: center;
+
+	&-title {
+		font-size: 32px;
+		font-weight: 300;
+
+		&_small {
+			font-size: 26px;
+			display: block;
+			margin-bottom: 20px;
+		}
+	}
+
+	&-form {
+		&__label {
+			display: block;
+			margin-bottom: 17px;
+			font-size: 20px;
+			font-weight: 300;
+		}
+
+		&__input {
+			display: block;
+			margin: auto;
+			margin-bottom: 12px;
+
+			&::placeholder {
+				text-align: center;
+			}
+		}
+
+		&__button {
+			margin-bottom: 9px;
+		}
+	}
+}

@@ -1,0 +1,60 @@
+.partners {
+	padding: 62px 0 62px;
+}
+.partners-wrap {
+	margin-top: 50px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;;
+}
+.partners-block:hover {
+	transition: all .7s;
+    box-shadow: 0 0 10px 5px rgba(0,0,0,0.09);
+    @include lg-block() {
+    	transition: none;
+    	box-shadow: none;
+    }
+}
+
+.partner {
+	//padding: 43px 80px;
+    transition: all .7s;
+    width: 231px;
+    height: 158px;
+}
+
+.partner1 {
+	background: url(../images/partners/icon-1.png)center no-repeat;
+	@include lg(background, url(../images/partners/icon-1_hover.png) center no-repeat);
+	&:hover {
+		background: url(../images/partners/icon-1_hover.png) center no-repeat;
+	}
+}
+.partner2 {
+	background: url(../images/partners/icon-2.png) center no-repeat;
+	@include lg(background, url(../images/partners/icon-2_hover.png)center no-repeat);
+	&:hover {
+		background: url(../images/partners/icon-2_hover.png) center no-repeat;
+	}
+}
+.partner3 {
+	background: url(../images/partners/icon-3.png) center no-repeat;
+	@include lg(background, url(../images/partners/icon-3_hover.png)center no-repeat);
+	&:hover {
+		background: url(../images/partners/icon-3_hover.png) center no-repeat;
+	}
+}
+.partner4 {
+	background: url(../images/partners/icon-1.png) center no-repeat;
+	@include lg(background, url(../images/partners/icon-1_hover.png)center no-repeat);
+	&:hover {
+		background: url(../images/partners/icon-1_hover.png) center no-repeat;
+	}
+}
+.partner5 {
+	background: url(../images/partners/icon-2.png) center no-repeat;
+	@include lg(background, url(../images/partners/icon-2_hover.png) center no-repeat);
+	&:hover {
+		background: url(../images/partners/icon-2_hover.png) center no-repeat;
+	}
+}

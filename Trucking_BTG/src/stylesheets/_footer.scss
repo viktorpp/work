@@ -1,0 +1,45 @@
+.footer {
+	padding: 35px 39px;
+
+	&-menu {
+		margin-top: 12px;
+		@include ftr(margin-top, 20px);
+		&__link {
+			color: #1f1f1f;
+		}
+	}
+	&-wrap {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		align-items: center;
+		@include ftr(display, block);
+	}
+	&-logo__right {
+		margin-top: 15px;
+		color: $text-color-form;
+		font-size: 15px;
+		font-weight: 400;
+		letter-spacing: 0.3px;
+		@include ftr-block() {
+			text-align: center;
+			margin-top: 20px;
+		}
+		span {
+			margin-right: 15px;
+			@include sm-block() {
+				margin-right: 4px;
+				font-size: 13px;
+			}
+		}
+		img {
+			vertical-align: middle;
+
+		}
+	}
+	&-logo__left {
+		@include ftr(text-align, center);
+		
+	}
+
+}

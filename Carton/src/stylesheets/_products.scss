@@ -1,0 +1,27 @@
+.products {
+	padding: 57px 0 73px;
+
+	&-block {
+		margin-bottom: 35px;
+		text-align: center;
+
+		&__img {
+			margin-bottom: 19px;
+		}
+
+		&__title {
+			margin-bottom: 28px;
+			font-size: 20px;
+			font-weight: 700;
+		}
+
+		&__button {
+			margin-right: 12px;
+		}
+	}
+}
+
+.products-block_bottom1, 
+.products-block_bottom2 {
+	margin-bottom: 0;
+}

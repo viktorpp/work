@@ -1,0 +1,21 @@
+@import "base/_reset.scss";
+@import "base/_variables.scss";
+@import "base/_interface.scss";
+
+body {
+	background-color: #fff;
+	font-family: 'Roboto', sans-serif;
+}
+
+@import "_head.scss";
+@import "_main.scss";
+@import "_modal.scss";
+@import "_features.scss";
+@import "_products.scss";
+@import "_offer.scss";
+@import "_production.scss";
+@import "_customers.scss";
+@import "_feedback.scss";
+@import "_contacts.scss";
+@import "_media.scss";
+@import "_footer.scss";

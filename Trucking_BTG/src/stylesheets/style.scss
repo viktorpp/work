@@ -1,0 +1,18 @@
+@import "base/_sgrid.scss";
+@import "base/_variables.scss";
+@include reset();
+
+@import "_interface.scss";
+@import "_head.scss";
+@import "_modal1.scss";
+@import "_modal2.scss";
+@import "_head-pages.scss";
+@import "_services.scss";
+	@import "_servece1.scss";
+@import "_offer.scss";
+@import "_news.scss";
+@import "_advantage.scss";
+@import "_partners.scss";
+@import "_form.scss";
+@import "_footer.scss";
+@import "_thankyou.scss";

@@ -1,0 +1,100 @@
+.services {
+	background: $section-bg;
+	height: 465px;
+	@include xxll(height, auto);
+	&-wrap {
+		padding: 60px 34px 0 34px;
+		background: $section-bg;
+		position: relative;
+		top: -120px;
+		@include xxll-block() {
+			top: 0;
+			padding: 62px 34px;
+		}
+		@include md(padding, 45px 0);
+		@include sm(padding, 35px 0);
+	}
+	&-blocks {
+		margin-top: 52px;
+		display: flex;
+		flex-wrap: wrap;
+		@include md(margin-top, 45px);
+		@include sm(margin-top, 35px);
+
+	}
+	&-block {
+		height: 100%;
+		padding: 60px 10px 60px 0;
+		background: $bg-color-light;
+		box-sizing: border-box;
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		@include lg(padding, 35px 10px 35px 0);
+
+		&__text {
+			text-align: right;
+			color: $text-color-dark;
+			font-size: 16px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.32px;
+		}
+
+		&__img {
+			margin-left: 30px;
+			@include xl(margin-left, 10px);
+		}
+		&__button {
+			width: 153px;
+			display: none;
+			margin-top: 13px;
+			margin-left: 40px;
+			color: $text-color-dark;
+			border: 2px solid $text-color-dark;
+			@include lg(display, block);
+			&:hover {
+				@include lg(border, 2px solid $text-color-dark);
+				
+			}
+		}
+	}
+
+	&-block__wrapper {
+		position: relative;
+		overflow: hidden;
+		display: block;
+		margin: 0 3px;
+		margin-bottom: 4px;
+		width: 32.79%;
+		@include bigxxll(width, 32.66%);
+		@include xl(width, 32.6%);
+		@include lg(width, 48.7%);
+		@include w_625(width, 100%);
+	}
+	&-block2 {
+		width: 100%;
+		position:absolute;
+		left: 0;
+		top:0;
+		transition: all 0.5s;
+		background: #272e3c;
+		transform: translateY(100%);
+		@include lg(display, none);
+		
+		&__button {
+			width: 153px;
+			display: block;
+			margin-top: 13px;
+			margin-left: 40px;
+		}
+	}
+
+	&-block__text2 {
+		color: $text-color-light;
+	}
+}
+
+.services-block__wrapper:hover .services-block2 {
+	transform: translateY(0);
+}
