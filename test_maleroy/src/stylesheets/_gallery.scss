@@ -1,0 +1,100 @@
+.gallery {
+	position: relative;
+
+	&:before {
+		content: "";
+		position: absolute;
+		top: 0;
+		width: 100%;
+		height: 99%;
+		background-image: linear-gradient(21deg, #33ff71 0%, #6533ff 100%);
+		opacity: 0.15;
+
+	}
+
+	&__foto {
+		display: block;
+		margin: 0 auto;
+	}
+
+	&__arrow_left {
+		position: absolute;
+		left: 20%;
+		top: 45%;
+		width: 118px;
+		height: 118px;
+		background: rgba($primary-color, 0.25) url(../images/navigation/arrow_left_dark.png) no-repeat;
+		background-position: 45% 50%;
+		background-size: 14px 22px;
+
+		&:hover {
+			background: url(../images/navigation/arrow_left_light.png) no-repeat, linear-gradient(29deg, rgba(#33ff71, 0.25) 0%, rgba(#33ff71, 0.25) 1%, rgba(#6533ff, 0.25) 100%);
+			background-position: 45% 50%;
+		}
+	}
+
+	&__arrow_right {
+		position: absolute;
+		right: 20%;
+		top: 45%;
+		width: 118px;
+		height: 118px;
+		background: $primary-color;
+		background: rgba($primary-color, 0.25) url(../images/navigation/arrow_right_dark.png) no-repeat;
+		background-position: 45% 50%;
+		background-size: 14px 22px;
+
+		&:hover {
+			background: url(../images/navigation/arrow_right_light.png) no-repeat, linear-gradient(29deg, rgba(#33ff71, 0.25) 0%, rgba(#33ff71, 0.25) 1%, rgba(#6533ff, 0.25) 100%);
+			background-position: 45% 50%;
+		}
+
+	}
+	
+	&__scroll {
+		position: absolute;
+		bottom: 69px;
+		left: 50%;
+		margin-left: -15px;
+	}
+}
+
+@media (max-width: 991px) {
+	.gallery {
+	&__arrow_left {
+		left: 10%;
+		top: 35%;
+		width: 80px;
+		height: 80px;
+		}
+
+	&__arrow_right {
+		right: 10%;
+		top: 35%;
+		width: 80px;
+		height: 80px;
+	}
+	
+	&__scroll {
+		bottom: 20px;
+	}
+}
+}
+
+@media (max-width: 575px) {
+	.gallery {
+	&__arrow_left {
+		width: 50px;
+		height: 50px;
+		}
+
+	&__arrow_right {
+		width: 50px;
+		height: 50px;
+	}
+	
+	&__scroll {
+		width: 20px;
+	}
+}
+}

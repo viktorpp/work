@@ -1,0 +1,168 @@
+.project {
+	background-color: $bg-color;
+	padding-bottom: 50px;
+
+	&__title {
+		padding-top: 100px;
+	}
+
+	&__blocks {
+		margin-top: 95px;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+	}
+
+	&__block {
+		margin-top: 15px;
+		&-title {
+			width: 270px;
+			height: 84px;
+			padding-top: 25px;
+			text-align: center;
+			background-image: linear-gradient(21deg, rgba(#33ff71, 0.25) 0%, rgba(#6533ff, 0.25) 100%);
+			color: $text-color-primary;
+			font-family: $font-family-title;
+			font-size: 18px;
+			font-weight: 700;
+			line-height: 31px;
+			text-transform: uppercase;
+		}
+	}
+	
+	&__touch {
+		position: relative;
+		top: 20px;
+	}
+
+	
+}
+.block-foto-wrap {
+	position: relative;
+	//overflow: hidden;
+	height: 100%;
+}
+
+.block-foto {
+	margin-top: 16px;
+	display: block;
+	transition: all 0.5s;
+}
+.block-foto2 {
+	width: 100%;
+	height: 72%;
+	position:absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(#000000, 0.25);
+	transition: all 0.5s;
+	opacity: 0;
+
+	&__link {
+		width: 100%;
+		height: 100%;
+		display: flex;
+		
+		img {
+			margin: auto;
+		}
+	}
+}
+
+.block-foto-wrap:hover .block-foto2 {
+	opacity:1;
+	transform: scale(1.05);
+	transition-delay: 0.3s;
+
+}
+.block-foto-wrap:hover .block-foto {
+	transform: scale(1.05);
+}
+
+.cercle-links {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 45px;
+
+
+}
+.cercle-link {
+	display: block;
+	width: 14px;
+	height: 14px;
+	margin: 8px;
+	border-radius: 100%;
+	background-color: #04334b;
+
+	&_active {
+		width: 15px;
+		height: 15px;
+		border: 2px solid #04334b;
+		background-color: $bg-color;
+
+	}
+}
+
+@media (max-width: 991px) {
+	.project {
+		padding-bottom: 30px;
+
+		&__title {
+			padding-top: 30px;
+		}
+
+		&__blocks {
+			margin-top: 20px;
+		}
+
+		&__block {
+			margin-top: 15px;
+
+		}
+
+		&__touch {
+			position: relative;
+			top: 20px;
+		}
+
+
+	}
+
+	.block-foto {
+		margin-top: 6px;
+	}
+	.cercle-links {
+		margin-top: 10px;
+	}
+}
+
+@media (max-width: 767px) {
+	.project {
+		&__blocks {
+			display: block;
+			margin-top: 5px;
+			text-align: center;
+		}
+
+		&__block {
+
+			&-title {
+				height: 34px;
+				padding-top: 0;
+				font-size: 16px;
+				margin: 0 auto;
+			}
+		}
+	}
+}
+
+@media (max-width: 360px) {
+	.project {
+		&__block {
+			&-title {
+				width: 100%;
+			}
+		}
+	}
+}

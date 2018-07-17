@@ -1,0 +1,67 @@
+.map {
+	padding: 100px 0;
+	background: url(../images/map.jpg) no-repeat;
+	background-size: cover;
+
+	&__touch {
+		position: relative;
+		top: -60px;
+		.line {
+			height: 227px;
+		}
+	}
+
+	&__contact-form {
+		margin-right: 95px;
+		padding: 24px 27px 29px 28px;
+		background-color: rgba($bg-color, 0.75);
+	}
+
+	&__form-title{
+		font-size: 18px;
+		font-weight: 700;
+		line-height: 36px;
+	}
+
+	&__form {
+		margin-top: 15px;
+	}
+}
+
+@media (max-width: 991px) {
+	.map {
+	padding: 10px;
+	
+	&__touch {
+		top: 10px;
+		.line {
+			height: 55px;
+		}
+	}
+
+	&__contact-form {
+		margin-top: 25px;
+		margin-right: 60px;
+		padding: 14px 17px 19px 18px;
+	}
+
+	&__form-title{
+		font-size: 14px;
+		line-height: 20px;
+	}
+
+	&__form {
+		margin-top: 5px;
+	}
+}
+}
+
+@media (max-width: 575px) {
+	.map {
+	&__contact-form {
+		
+		margin-right: 0;
+	}
+
+}
+}
